@@ -64,7 +64,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'expenses.apps.ExpensesConfig',
     'sources.apps.SourcesConfig',
-    #'incomes.apps.IncomesConfig',
+    'incomes.apps.IncomesConfig',
 ]
 
 MIDDLEWARE = [
