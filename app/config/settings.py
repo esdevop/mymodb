@@ -168,9 +168,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.CustomUser' 
 
 # RESTFULL settings
-browsableAPIrender = []
-if DEBUG:
-    browsableAPIrender = ['rest_framework.renderers.BrowsableAPIRenderer']
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
@@ -184,7 +181,8 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
-    ] + browsableAPIrender,
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ],
 }
 
 REST_AUTH_SERIALIZERS = {
