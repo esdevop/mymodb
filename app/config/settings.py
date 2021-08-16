@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     # Local
     'users.apps.UsersConfig',
     #'expenses.apps.ExpensesConfig',
-    #'sources.apps.SourcesConfig',
+    'sources.apps.SourcesConfig',
     #'incomes.apps.IncomesConfig',
 ]
 
