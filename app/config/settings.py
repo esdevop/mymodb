@@ -5,7 +5,7 @@ from pathlib import Path
 STATE_DEVELOPMENT = True
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-ENV_DIR = os.path.join(BASE_DIR, '../env')
+ENV_DIR = os.path.join(BASE_DIR, './env')
 
 envfile = '.env.production'
 if STATE_DEVELOPMENT:
